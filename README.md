@@ -14,6 +14,7 @@ The test is written in file UnitTest1.cs
 You can run the test with the command **dotnet run**
 
 In order to use **Xunit** you have to include below lines to **csproj**
+<pre>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -26,7 +27,7 @@ In order to use **Xunit** you have to include below lines to **csproj**
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
+</pre>
   ## Heroku and GitHub 
 
   You can enable the option "Wait for CI to pass before deploy in Heroku.

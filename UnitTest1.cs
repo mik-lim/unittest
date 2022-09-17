@@ -1,4 +1,6 @@
 using Xunit;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace unittest;
 
@@ -8,13 +10,7 @@ public class UnitTest1
     [Fact]
     public void CalculateSumTest()
     {
-        Assert.Equal("{'sum' : 11}", CalculateSum(5, 9));
-    }
-
-
-    int Add(int x, int y)
-    {
-        return x + y;
+        Assert.Equal("{'sum' : 11}", CalculateSum(5, 6));
     }
 
     public string CalculateSum(int a, int b)

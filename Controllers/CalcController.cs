@@ -15,14 +15,5 @@ namespace unittest.Controllers
             Console.WriteLine(res);
             return res;
         }
-
-        [HttpGet("test/{a}/{b}")]
-        public ActionResult JsonSum(int a, int b)
-        {
-            int sum = a + b;
-            string res = "{'sum' : " + sum + "}";
-            Console.WriteLine(res);
-            return Ok(res);
-        }
     }
 }

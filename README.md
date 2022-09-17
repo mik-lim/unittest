@@ -15,19 +15,19 @@ You can run the test with the command **dotnet run**
 
 In order to use **Xunit** you have to include below lines to **csproj**
 <pre>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
-    <PackageReference Include="xunit" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="coverlet.collector" Version="3.1.2">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
+    &lt;PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" /&gt;
+    &lt;PackageReference Include="xunit" Version="2.4.1" /&gt;
+    &lt;PackageReference Include="xunit.runner.visualstudio" Version="2.4.3"&gt;
+      &lt;IncludeAssets&gt;runtime; build; native; contentfiles; analyzers; buildtransitive&lt;/IncludeAssets&gt;
+      &lt;PrivateAssets&gt;all&lt;/PrivateAssets&gt;
+    &lt;/PackageReference&gt;
+    &lt;PackageReference Include="coverlet.collector" Version="3.1.2"&gt;
+      &lt;IncludeAssets&gt;runtime; build; native; contentfiles; analyzers; buildtransitive&lt;/IncludeAssets&gt;
+      &lt;PrivateAssets&gt;all&lt;/PrivateAssets&gt;
+    &lt;/PackageReference&gt;
+  &lt;/ItemGroup&gt;
 </pre>
+
   ## Heroku and GitHub 
 
   You can enable the option "Wait for CI to pass before deploy in Heroku.

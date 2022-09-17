@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace unittest.Controllers
@@ -11,14 +7,22 @@ namespace unittest.Controllers
     public class CalcController : ControllerBase
     {
         [HttpGet("{a}/{b}")]
-        public ActionResult CalculateSum(int a, int b){
-            int sum=a+b;
-            string res="{'sum' : "+sum+"}";
+
+        public string CalculateSum(int a, int b)
+        {
+            int sum = a + b;
+            string res = "{'sum' : " + sum + "}";
+            Console.WriteLine(res);
+            return res;
+        }
+
+        [HttpGet("Calc/{a}/{b}")]
+        public ActionResult JsonSum(int a, int b)
+        {
+            int sum = a + b;
+            string res = "{'sum' : " + sum + "}";
             Console.WriteLine(res);
             return Ok(res);
         }
     }
-
-
-
 }

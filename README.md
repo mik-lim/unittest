@@ -11,7 +11,7 @@ And then the response should be {'sum' : 11}
 
 The test is written in file UnitTest1.cs
 
-You can run the test with the command **dotnet run**
+You can run the test with the command **dotnet test**
 
 In order to use **Xunit** you have to include below lines to **csproj**
 <pre>

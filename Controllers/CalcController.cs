@@ -16,7 +16,7 @@ namespace unittest.Controllers
             return res;
         }
 
-        [HttpGet("new/{a}/{b}")]
+        [HttpGet("test/{a}/{b}")]
         public ActionResult JsonSum(int a, int b)
         {
             int sum = a + b;

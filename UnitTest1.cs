@@ -8,7 +8,7 @@ public class UnitTest1
     [Fact]
     public void CalculateSumTest()
     {
-        Assert.Equal("{'sum' : 11}", CalculateSum(5, 6));
+        Assert.Equal("{'sum' : 11}", CalculateSum(5, 9));
     }
 
 

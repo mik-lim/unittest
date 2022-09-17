@@ -15,6 +15,7 @@ You can run the test with the command **dotnet run**
 
 In order to use **Xunit** you have to include below lines to **csproj**
 <pre>
+&lt;ItemGroup&gt;
     &lt;PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" /&gt;
     &lt;PackageReference Include="xunit" Version="2.4.1" /&gt;
     &lt;PackageReference Include="xunit.runner.visualstudio" Version="2.4.3"&gt;
@@ -25,7 +26,7 @@ In order to use **Xunit** you have to include below lines to **csproj**
       &lt;IncludeAssets&gt;runtime; build; native; contentfiles; analyzers; buildtransitive&lt;/IncludeAssets&gt;
       &lt;PrivateAssets&gt;all&lt;/PrivateAssets&gt;
     &lt;/PackageReference&gt;
-  &lt;/ItemGroup&gt;
+ &lt;/ItemGroup&gt;
 </pre>
 
   ## Heroku and GitHub 

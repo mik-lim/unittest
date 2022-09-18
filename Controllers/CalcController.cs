@@ -8,12 +8,12 @@ namespace unittest.Controllers
     {
         [HttpGet("{a}/{b}")]
 
-        public string CalculateSum(int a, int b)
+        public IActionResult CalculateSum(int a, int b)
         {
             int sum = a + b;
             string res = "{'sum' : " + sum + "}";
             Console.WriteLine(res);
-            return res;
+            return Ok(res);
         }
     }
 }

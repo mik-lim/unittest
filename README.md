@@ -35,4 +35,4 @@ In order to use **Xunit** you have to include below lines to **csproj**
   And then in GitHub inside your repo click **Actions** and choose the .NET
   and click Configure.
 
-  And then every time you push to GitHub, it runs the test and if the tests fails, Heroku application is not updated.
+  And then every time you push to GitHub, it runs the test and if the tests fails, Heroku application is not updated. 

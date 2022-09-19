@@ -10,7 +10,7 @@ public class UnitTest1
     [Fact]
     public void CalculateSumTest()
     {
-        Assert.Equal("{'sum' : 11}", CalculateSum(5, 7));
+        Assert.Equal("{'sum' : 11}", CalculateSum(5, 6));
     }
 
     public string CalculateSum(int a, int b)
